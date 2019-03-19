@@ -1,0 +1,28 @@
+[
+	{
+		"url": "http://localhost/api/numtoword?number=3456",
+		"response": { "result": "три тысячи четыреста пятьдесят шесть" },
+		"method": "GET"
+	},
+	{
+		"url": "http://localhost/api/mathexp?a=2&b=-9&c7",
+		"response": { "result": "x1 = 1, x2 = 3.5" },
+		"method": "GET"
+	},
+	{
+		"url": "http://localhost/api/dayoftheweek?date=15.03.2019",
+		"response": { "result": "Пятница" },
+		"method": "GET"
+	},
+	{
+		"url": "http://localhost/api/fibon?number=11",
+		"response": { "result": "89" },
+		"method": "GET"
+	},
+	{
+		"url": "http://localhost/api/region?region=54",
+		"response": { "result": "Новосибирская область" },
+		"method": "GET"
+	},
+
+]
