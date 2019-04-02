@@ -1,0 +1,108 @@
+[
+	{
+		"url": "http://localhost/api/clients",
+		"response": [
+					    {
+					        "id": 1,
+					        "name": "Смирнов И.И"
+					    },
+					    {
+					        "id": 2,
+					        "name": "Иванов И.И"
+					    }
+					],
+		"method": "GET"
+	},
+	{
+		"url": "http://localhost/api/services",
+		"response": [
+					    {
+					        "id": 1,
+					        "name": "Окраска волос"
+					    },
+					    {
+					        "id": 2,
+					        "name": "Ногти"
+					    }
+					],
+		"method": "GET"
+	},
+	{
+		"url": "http://localhost/api/orders",
+		"response": [
+					    {
+					        "id": 1,
+					        "client_id": 1,
+					        "service_id": 2,
+					        "client": {
+					            "id": 1,
+					            "name": "Смирнов И.И"
+					        },
+					        "service": {
+					            "id": 2,
+					            "name": "Ногти"
+					        }
+					    },
+					    {
+					        "id": 2,
+					        "client_id": 2,
+					        "service_id": 1,
+					        "client": {
+					            "id": 1,
+					            "name": "Иванов И.И""
+					        },
+					        "service": {
+					            "id": 1,
+					            "name": "Окраска волос"
+					        }
+					    }
+					],
+		"method": "GET"
+	},
+	{
+		"url": "http://localhost/api/clients?name=Петров П.П",
+		"response": { "result": "Запись добавлена" },
+		"method": "POST"
+	},
+	{
+		"url": "http://localhost/api/services?name=Ногти",
+		"response": { "result": "Запись добавлена" },
+		"method": "POST"
+	},
+	{
+		"url": "http://localhost/api/orders?client_id=3&service_id=3",
+		"response": { "result": "Запись добавлена" },
+		"method": "POST"
+	},
+	{
+		"url": "http://localhost/api/clients?id=1&name=Иванов Иван Иванович",
+		"response": { "result": "Запись обновлена" },
+		"method": "PUT"
+	},
+	{
+		"url": "http://localhost/api/services?id=2&name=Мелирование",
+		"response": { "result": "Запись обновлена" },
+		"method": "PUT"
+	},
+	{
+		"url": "http://localhost/api/orders?id=1&client_id=1&service_id=2",
+		"response": { "result": "Запись обновлена" },
+		"method": "PUT"
+	},
+	{
+		"url": "http://localhost/api/clients?id=1",
+		"response": { "result": "Запись удалена" },
+		"method": "DELETE"
+	},
+	{
+		"url": "http://localhost/api/services?id=2",
+		"response": { "result": "Запись удалена" },
+		"method": "DELETE"
+	},
+	{
+		"url": "http://localhost/api/v2/orders?id=1",
+		"response": { "result": "Запись удалена" },
+		"method": "DELETE"
+	},
+
+]
